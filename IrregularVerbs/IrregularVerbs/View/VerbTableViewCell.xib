@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VerbTableViewCell" rowHeight="84" id="C6g-cY-ddC" customClass="VerbTableViewCell" customModule="IrregularVerbs" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="84"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C6g-cY-ddC" id="3yM-SN-koN">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LvZ-ms-oMj">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="84"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NiJ-sU-h3O">
+                                <rect key="frame" x="0.0" y="7.6666666666666643" width="131" height="69"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLy-Hv-la1">
+                                        <rect key="frame" x="43.333333333333329" y="24.333333333333336" width="44.333333333333329" height="20.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1so-cH-SoJ">
+                                        <rect key="frame" x="48" y="44.666666666666671" width="35.333333333333343" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="FhT-e0-sEg"/>
+                                    <constraint firstItem="pLy-Hv-la1" firstAttribute="centerY" secondItem="NiJ-sU-h3O" secondAttribute="centerY" id="Sba-Co-dPY"/>
+                                    <constraint firstItem="1so-cH-SoJ" firstAttribute="top" secondItem="pLy-Hv-la1" secondAttribute="bottom" id="UYZ-sz-qW5"/>
+                                    <constraint firstItem="pLy-Hv-la1" firstAttribute="centerX" secondItem="NiJ-sU-h3O" secondAttribute="centerX" id="Z1A-dG-Y6S"/>
+                                    <constraint firstItem="1so-cH-SoJ" firstAttribute="centerX" secondItem="NiJ-sU-h3O" secondAttribute="centerX" id="znU-rc-ceh"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SlO-qU-k0k">
+                                <rect key="frame" x="131" y="32" width="131" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aK2-Nw-tBF">
+                                <rect key="frame" x="262" y="32" width="131" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="LvZ-ms-oMj" secondAttribute="trailing" id="87c-15-iQt"/>
+                    <constraint firstItem="LvZ-ms-oMj" firstAttribute="leading" secondItem="3yM-SN-koN" secondAttribute="leading" id="9xE-bu-alz"/>
+                    <constraint firstAttribute="bottom" secondItem="LvZ-ms-oMj" secondAttribute="bottom" id="SnB-Ow-xxn"/>
+                    <constraint firstItem="LvZ-ms-oMj" firstAttribute="top" secondItem="3yM-SN-koN" secondAttribute="top" id="tim-5c-KvS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="infinitiveLabel" destination="pLy-Hv-la1" id="p0C-9d-ruw"/>
+                <outlet property="participleLabel" destination="aK2-Nw-tBF" id="SwR-uW-ITe"/>
+                <outlet property="pastSimpleLabel" destination="SlO-qU-k0k" id="gZU-FT-1bF"/>
+                <outlet property="translationLabel" destination="1so-cH-SoJ" id="f3q-Ik-2Z8"/>
+            </connections>
+            <point key="canvasLocation" x="-37.404580152671755" y="-101.40845070422536"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
